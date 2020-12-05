@@ -4,11 +4,9 @@ class bob
 	{
 		var options={
 			isStatic:false,
-			restitution:0.3,
-			friction:0.5,
+			restitution:2.0,
+			friction:0.1,
 			density:1.2
-
-			
 			}
 		this.x=x;
 		this.y=y;
@@ -26,10 +24,11 @@ class bob
 			translate(paperpos.x, paperpos.y);
 			ellipseMode(CENTER)
 			strokeWeight(3);
-			fill("black")
+			fill("white")
 			ellipse(0,0,this.r, this.r);
-			pop()
-			
+			pop();
 	}
+
+	
 
 }
