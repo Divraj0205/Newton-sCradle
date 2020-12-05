@@ -5,9 +5,9 @@ class connection{
     var options = {
         bodyA: bodyA,
         bodyB: bodyB,
-        length: 200,
-        stiffness: 0.04,
-        pointB:{x:this.offsetX,y:this.offsetY}
+        //length: 200,
+        //stiffness: 10,
+        pointB:{x:this.offsetX, y:this.offsetY}
     }
       
    this.chain=Matter.Constraint.create(options);
@@ -17,7 +17,10 @@ class connection{
     display(){
      var posA=this.chain.bodyA.position;
      var posB=this.chain.bodyB.position;
-     line(posA.x,posA.y,posB.x,posB.y); 
+
+     var poiX=posB.x+this.offsetX;
+     var poiY=posB.y+this.offsetY;
+     line(posA.x,posA.y,poiX,poiY); 
 
     }
 
