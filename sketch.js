@@ -59,13 +59,13 @@ function draw() {
   
 
   drawSprites();
-  keypressed();
+  //keypressed();
  
 }
 
-function keypressed(){
+function keyPressed(){
 	if(keyCode===UP_ARROW){
-		Matter.Body.applyForce(bob3.body,bob3.body.position,{x:-5,y:0});
+		Matter.Body.applyForce(bob3.body,bob3.body.position,{x:-200,y:0});
 	}
 }
 
