@@ -4,7 +4,7 @@ class bob
 	{
 		var options={
 			isStatic:false,
-			restitution:2.0,
+			restitution:0.7,
 			friction:0.1,
 			density:1.2
 			}
